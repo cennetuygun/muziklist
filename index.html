@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/cb06fec0a1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--mp3 player-->
+    <div class="music-player">
+      <!--oynatma listesi-->
+      <button id="playlist">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <img src="images/melike-sahin.jpg" id="song-image" alt="" />
+      <div class="song-details">
+        <div id="song-name">Diva Yorgun</div>
+        <div id="song-artist">Melike Sahin</div>
+      </div>
+      <div class="player-options">
+        <button id="shuffle">
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button id="prev">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="play" class="">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause"class="hide">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="next">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+        <button id="repeat">
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+      </div>
+      <audio src="images/diva-yorgun.mp3" id="audio" preload="metadata"></audio>
+      <div id="progress-bar">
+        <div id="current-progress"></div>
+      </div>
+
+      <div class="time-container">
+        <span id="current-time">02.10</span>
+        <span id="max-duration">04.19</span>
+      </div>
+
+      <div id="playlist-container" class="hide">
+        <button id="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul id="playlist-songs"></ul>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
